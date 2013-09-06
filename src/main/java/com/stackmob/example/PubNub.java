@@ -72,12 +72,7 @@ public class PubNub implements CustomCodeMethod {
       PUBLISH_KEY = serviceProvider.getConfigVarService().get("publish-key","PubNub");
       SUBSCRIBE_KEY  = serviceProvider.getConfigVarService().get("subscribe-key","PubNub");
       SECRET_KEY  = serviceProvider.getConfigVarService().get("secret-key","PubNub");
-
-      logger.debug("KEYS");
-      logger.debug(PUBLISH_KEY);
-    } catch(Exception e)
-
-    logger.debug(errMap.toString()));{
+    } catch(Exception e) {
       return Util.internalErrorResponse("global config var error - check that pubnub module is installed", e, errMap);  // error 500 // http 500 - internal server error
     }
 
