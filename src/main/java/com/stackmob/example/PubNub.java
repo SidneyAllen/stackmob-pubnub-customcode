@@ -40,11 +40,6 @@ import org.json.simple.parser.ParseException;
 
 public class PubNub implements CustomCodeMethod {
 
-  //Add the PubNub module at https://marketplace.stackmob.com/module/pubnub
-  public static final String PUBLISH_KEY = "pub-YOUR_PUBLISH_KEY";
-  public static final String SUBSCRIBE_KEY = "sub-YOUR_SUBSCRIBE_KEY";
-  public static final String SECRET_KEY = "sec-YOUR_SECRET_KEY";
-
   @Override
   public String getMethodName() {
     return "pubnub_send";
@@ -62,12 +57,24 @@ public class PubNub implements CustomCodeMethod {
     String answer_id = "";
     String question_id = "";
     int count = 1;
+    String PUBLISH_KEY = "";
+    String SUBSCRIBE_KEY  = "";
+    String SECRET_KEY  = "";
 
     LoggerService logger = serviceProvider.getLoggerService(PubNub.class);
 
     // I'll be using these maps to print messages to console as feedback to the operation
     Map<String, SMValue> feedback = new HashMap<String, SMValue>();
     Map<String, String> errMap = new HashMap<String, String>();
+
+    //Add the PubNub module at https://marketplace.stackmob.com/module/pubnub
+    try {
+      PUBLISH_KEY = serviceProvider.getConfigVarService().get("publish-key");
+      SUBSCRIBE_KEY  = serviceProvider.getConfigVarService().get("subscribe-key");
+      SECRET_KEY  = serviceProvider.getConfigVarService().get("secret-key");
+    } catch(Exception e) {
+      return Util.internalErrorResponse("global config var error - check that pubnub module is installed", e, errMap);  // error 500 // http 500 - internal server error
+    }
 
     // PUBNUB Msg Object
     JSONObject msgObj = new JSONObject();
