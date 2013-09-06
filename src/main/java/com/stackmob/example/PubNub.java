@@ -69,9 +69,9 @@ public class PubNub implements CustomCodeMethod {
 
     //Add the PubNub module at https://marketplace.stackmob.com/module/pubnub
     try {
-      PUBLISH_KEY = serviceProvider.getConfigVarService().get("publish-key");
-      SUBSCRIBE_KEY  = serviceProvider.getConfigVarService().get("subscribe-key");
-      SECRET_KEY  = serviceProvider.getConfigVarService().get("secret-key");
+      PUBLISH_KEY = serviceProvider.getConfigVarService().get("publish-key","pubnub");
+      SUBSCRIBE_KEY  = serviceProvider.getConfigVarService().get("subscribe-key","pubnub");
+      SECRET_KEY  = serviceProvider.getConfigVarService().get("secret-key","pubnub");
     } catch(Exception e) {
       return Util.internalErrorResponse("global config var error - check that pubnub module is installed", e, errMap);  // error 500 // http 500 - internal server error
     }
