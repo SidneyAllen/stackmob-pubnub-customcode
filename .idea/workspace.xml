@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a28012f0-2a80-4ee9-9d04-a6e86d70afee" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/stackmob/example/PubNub.java" afterPath="$PROJECT_DIR$/src/main/java/com/stackmob/example/PubNub.java" />
     </list>
     <ignored path="java-example.iws" />
@@ -63,7 +64,7 @@
       <file leaf-file-name="PubNub.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackmob/example/PubNub.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="83" selection-start="2552" selection-end="2552" vertical-scroll-proportion="0.408472">
+            <state line="73" column="82" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.4311649">
               <folding />
             </state>
           </provider>
@@ -419,7 +420,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stackmob/example/PubNub.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="83" selection-start="2552" selection-end="2552" vertical-scroll-proportion="0.408472">
+        <state line="73" column="82" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.4311649">
           <folding />
         </state>
       </provider>
