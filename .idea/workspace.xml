@@ -63,7 +63,7 @@
       <file leaf-file-name="PubNub.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackmob/example/PubNub.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="95" selection-start="2586" selection-end="2586" vertical-scroll-proportion="0.4311649">
+            <state line="79" column="34" selection-start="2677" selection-end="2677" vertical-scroll-proportion="0.9304085">
               <folding />
             </state>
           </provider>
@@ -419,7 +419,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stackmob/example/PubNub.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="95" selection-start="2586" selection-end="2586" vertical-scroll-proportion="0.4311649">
+        <state line="79" column="34" selection-start="2677" selection-end="2677" vertical-scroll-proportion="0.9304085">
           <folding />
         </state>
       </provider>
